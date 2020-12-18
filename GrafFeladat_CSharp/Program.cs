@@ -20,6 +20,24 @@ namespace GrafFeladat_CSharp
             graf.Hozzaad(4, 5);
             graf.Hozzaad(2, 4);
 
+            graf.Torles(1, 2);
+
+            graf.SzelessegiBejar(1);
+            Console.WriteLine();
+            graf.SzelessegiBejar(1);
+            Console.WriteLine();
+
+            if (graf.Osszefuggo())
+            {
+                Console.WriteLine("Összefüggő");
+            }
+            else
+            {
+                Console.WriteLine("Nem összefüggő");
+            }
+
+            Console.WriteLine(graf.Feszitofa());
+
             Console.WriteLine(graf);
             Console.ReadLine();
         }
